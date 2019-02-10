@@ -14,7 +14,8 @@ Install MicroPython and setup under Pycharm.
 
 After this Run - Edit Configurations...
 
-<img src="Pycharm2.png" width="50%">
+<p align="center">
+<img src="Pycharm2.png" width="50%"></p>
 <div align="center"><i>Show only one file</i></div>
 
 
@@ -29,7 +30,8 @@ After clone this repository. Istall Pycharm Community Edition, and setup correct
 Micro:Bit
 -----
 
-<img src="Microbit.png" width="50%">
+<p align="center">
+<img src="Microbit.png" width="50%"></p>
 <div align="center"><i>Post-boot image</i></div>
 
 
