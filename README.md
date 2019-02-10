@@ -8,7 +8,8 @@ How was it made
 
 Install MicroPython and setup under Pycharm.
 
-<img src="Pycharm.png" width="50%">
+<p align="center">
+<img src="Pycharm.png" width="50%"></p>
 <div align="center"><i>In Pycharm, setup MicroPython</i></div>
 
 After this Run - Edit Configurations...
@@ -36,5 +37,3 @@ https://microbit.org/
 
 https://makecode.microbit.org/#editor
 
-# microbit
-# microbit
