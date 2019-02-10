@@ -9,13 +9,13 @@ How was it made
 Install MicroPython and setup under Pycharm.
 
 <p align="center">
-<img src="Pycharm.png" width="50%"></p>
+<img src="Pycharm.png" width="70%"></p>
 <div align="center"><i>In Pycharm, setup MicroPython</i></div>
 
 After this Run - Edit Configurations...
 
 <p align="center">
-<img src="Pycharm2.png" width="50%"></p>
+<img src="Pycharm2.png" width="70%"></p>
 <div align="center"><i>Show only one file</i></div>
 
 
