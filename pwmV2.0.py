@@ -37,7 +37,7 @@ def bargraph(p):
                 display.set_pixel(4 - x, y, 9)
         for i in range(0, BarRest):
             display.set_pixel(i, 0, 6)
-    elif p == 1000 :
+    elif p == 1000:
         for y in range(4, 0, -1):
             for x in range(0, 5):
                 display.set_pixel(4 - x, y, 9)
