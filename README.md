@@ -3,6 +3,8 @@
 I just want to figure out, how to work Micro:bit under Linux.
 Offcorse with Python, not in web IDE.
 
+This small program sends a PWM signal on "P0".
+
 How was it made
 -----
 
