@@ -3,7 +3,7 @@
 I just want to figure out, how to work Micro:bit under Linux.
 Offcorse with Python, not in web IDE.
 
-This small program sends a PWM signal on P0 port.
+This small programs sends a PWM signal on P0 port.
 
 How was it made
 -----
@@ -32,11 +32,21 @@ After clone this repository. Istall Pycharm Community Edition, and setup correct
 Micro:Bit
 -----
 
+###Version 1
+
+
 <p align="center">
 <img src="Microbit.png" width="50%"></p>
 <div align="center"><i>Post-boot image</i></div>
 
+###Version 2
+--
+<p align="center">
+<img src="MicrobitV2.png" width="50%"></p>
+<div align="center"><i>Post-boot image</i></div>
 
+Links
+-----
 https://microbit.org/
 
 https://makecode.microbit.org/#editor
