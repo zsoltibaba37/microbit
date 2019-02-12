@@ -32,15 +32,15 @@ After clone this repository. Istall Pycharm Community Edition, and setup correct
 Micro:Bit
 -----
 
-###Version 1
+### Version 1
 
 
 <p align="center">
 <img src="Microbit.png" width="50%"></p>
 <div align="center"><i>Post-boot image</i></div>
 
-###Version 2
---
+### Version 2
+
 <p align="center">
 <img src="MicrobitV2.PNG" width="50%"></p>
 <div align="center"><i>Post-boot image</i></div>
