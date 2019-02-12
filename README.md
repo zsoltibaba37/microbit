@@ -26,7 +26,7 @@ Usage
 
 After clone this repository. Istall Pycharm Community Edition, and setup correctly.
 
-[Ctrl-Shift-F10] Shortcut copy the .hex file to the Micro:Bit.
+[Shift-F10] Shortcut or press Run button to copy the .hex file to the Micro:Bit.
 
 
 Micro:Bit
