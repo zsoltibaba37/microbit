@@ -3,7 +3,7 @@
 
 from microbit import *
 
-# Initial pwm value
+# Initial pwm value, start with 50%
 pwm = 500
 
 # Writes analog signal on the P0 leg
