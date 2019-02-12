@@ -42,7 +42,7 @@ Micro:Bit
 ### Version 2
 
 <p align="center">
-<img src="MicrobitV2.PNG" width="47%"></p>
+<img src="MicrobitV2.PNG" width="48%"></p>
 <div align="center"><i>Post-boot image</i></div>
 
 Links
