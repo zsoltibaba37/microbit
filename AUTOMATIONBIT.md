@@ -5,8 +5,6 @@ The automationbit.py test all input and output.
 The board pictures
 -----
 
-<p align="center">The Board</p>
-
 <p align="center">
 <img src="automationbit_1.jpg" width="70%"></p>
 <div align="center"><i>Front view</i></div>
