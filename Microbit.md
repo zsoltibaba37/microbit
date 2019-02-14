@@ -1,5 +1,4 @@
-Micro:Bit
------
+##Micro:Bit
 
 The BBC micro:bit is the spiritual successor of the BBC Micro of the 1980s, which itself introduced a generation of children to computing. The BBC micro:bit carries on this 30 year tradition and does it 18 times faster and is 70 times smaller than its predecessor.
 
