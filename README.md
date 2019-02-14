@@ -29,7 +29,7 @@ After clone this repository. Istall Pycharm Community Edition, and setup correct
 [Shift-F10] Shortcut or press Run button to copy the .hex file to the Micro:Bit.
 
 
-Micro:Bit
+Micro:Bit PWM test
 -----
 
 ### Version 1
