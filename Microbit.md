@@ -25,8 +25,9 @@ Based around a 32 bit ARM Cortex-M0 processor, the BBC micro:bit also features o
 #### Board
 
 <p align="center">
-<img src="bbc_micobit_v2.gif" width="70%"></p>
+<img src="bbc_micobit_v2.gif" width="80%"></p>
 
+#### Board Pinout
 
 <p align="center">
 <img src="Microbit_pinout.png" width="70%"></p>
