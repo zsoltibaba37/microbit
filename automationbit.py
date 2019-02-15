@@ -52,7 +52,7 @@ def analog_input_1():
     Automation:bit board Analog Input 1
     :return: 0 - 1023
     """
-    analog_1 = pin2.read_digital()
+    analog_1 = pin2.read_analog()
     return analog_1
 
 
@@ -61,7 +61,7 @@ def analog_input_2():
     Automation:bit board Analog Input 2
     :return: 0 - 1023
     """
-    analog_2 = pin1.read_digital()
+    analog_2 = pin1.read_analog()
     return analog_2
 
 
@@ -70,51 +70,55 @@ def analog_input_3():
     Automation:bit board Analog Input 3
     :return: 0 - 1023
     """
-    analog_3 = pin0.read_digital()
+    analog_3 = pin0.read_analog()
     return analog_3
 
 
 # ---------------------------------------------------------------------------------------------------------------------
-while True:
-    display.scroll("321", delay=100)
+t = 150         # delay
+s = 500         # sleep time
+bol = False     # monospace BOOL
 
+while True:
     # DIGITAL In
     a = digital_in_1()
-    display.scroll("a %d" % a, delay=100)
-    sleep(500)
+    display.scroll("di1:%d" % a, delay=t)
+    sleep(s)
 
     b = digital_in_2()
-    display.scroll("b %d" % b, delay=100)
-    sleep(500)
-
-    c = a + b
-    display.scroll("c %d" % c, delay=100)
-
+    display.scroll("di2:%d" % b, delay=t)
+    sleep(s)
 
     # DIGITAL Out
     digital_output_1(1)
-    display.scroll("do1 ok", delay=100)
-    sleep(500)
+    display.scroll("do1:ok", delay=t)
+    sleep(s)
+    digital_output_1(0)
 
     digital_output_2(1)
-    display.scroll("do2 ok", delay=100)
-    sleep(500)
+    display.scroll("do2:ok", delay=t)
+    sleep(s)
+    digital_output_2(0)
 
-    relay_output(1)
-    display.scroll("rel ok", delay=100)
-    sleep(500)
 
+    if a == 1:
+        relay_output(1)
+        display.scroll("rel:on", delay=t)
+        sleep(1000)
+        relay_output(0)
+        display.scroll("rel:off", delay=t)
+        sleep(1000)
 
     # ANALOG In
     d = analog_input_1()
-    display.scroll("%d An1 ok"% d, delay=100)
-    sleep(500)
+    display.scroll("an1:%d" % d, delay=t)
+    sleep(s)
 
-    d = analog_input_2()
-    display.scroll("%d An2 ok"% d, delay=100)
-    sleep(500)
+    e = analog_input_2()
+    display.scroll("an2:%d" % e, delay=t)
+    sleep(s)
 
-    d = analog_input_3()
-    display.scroll("%d An3 ok"% d, delay=100)
-    sleep(500)
+    f = analog_input_3()
+    display.scroll("an3:%d" % f, delay=t)
+    sleep(s)
 
