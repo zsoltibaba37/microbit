@@ -75,50 +75,55 @@ def analog_input_3():
 
 
 # ---------------------------------------------------------------------------------------------------------------------
-t = 150         # delay
-s = 500         # sleep time
+t = 120         # delay
+s = 200         # sleep time
 bol = False     # monospace BOOL
+
 
 while True:
     # DIGITAL In
-    a = digital_in_1()
-    display.scroll("di1:%d" % a, delay=t)
-    sleep(s)
+    if button_a.is_pressed():
+        a = digital_in_1()
+        display.scroll("Di1:%d" % a, delay=t)
+        sleep(s)
 
-    b = digital_in_2()
-    display.scroll("di2:%d" % b, delay=t)
-    sleep(s)
+        b = digital_in_2()
+        display.scroll("Di2:%d" % b, delay=t)
+        sleep(s)
 
     # DIGITAL Out
-    digital_output_1(1)
-    display.scroll("do1:ok", delay=t)
-    sleep(s)
-    digital_output_1(0)
+        digital_output_1(1)
+        display.scroll("Do1:ok", delay=t)
+        sleep(s)
+        digital_output_1(0)
 
-    digital_output_2(1)
-    display.scroll("do2:ok", delay=t)
-    sleep(s)
-    digital_output_2(0)
+        digital_output_2(1)
+        display.scroll("Do2:ok", delay=t)
+        sleep(s)
+        digital_output_2(0)
 
-
-    if a == 1:
         relay_output(1)
-        display.scroll("rel:on", delay=t)
-        sleep(1000)
+        display.scroll("Rel:on", delay=t)
+        sleep(s)
         relay_output(0)
-        display.scroll("rel:off", delay=t)
-        sleep(1000)
+        display.scroll("Rel:off", delay=t)
+        sleep(s)
+
 
     # ANALOG In
     d = analog_input_1()
-    display.scroll("an1:%d" % d, delay=t)
+    dsv = ((d - 50) * 24) // 1023
+    sleep(2000)
+    display.scroll("An1:%d" % dsv, delay=t)
     sleep(s)
 
     e = analog_input_2()
-    display.scroll("an2:%d" % e, delay=t)
+    esv = ((e - 49) * 24) // 1023
+    display.scroll("An2:%d" % esv, delay=t)
     sleep(s)
 
     f = analog_input_3()
-    display.scroll("an3:%d" % f, delay=t)
+    fsv = ((f - 49) * 24) // 1023
+    display.scroll("An3:%d" % fsv, delay=t)
     sleep(s)
 
